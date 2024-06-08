@@ -45,7 +45,9 @@ public class UserAuthController {
         newUser.setLastName(user.getLastName());
         newUser.setCompany(user.getCompany());
         newUser.setEmail(user.getEmail());
+
         newUser.setPassword(user.getPassword());
+        newUser.setRole(user.getRole());
 
         return userService.save(newUser);
     }
